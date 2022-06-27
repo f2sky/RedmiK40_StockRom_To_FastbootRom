@@ -5,8 +5,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://hugeota.d.miui.com/21.4.15/miui_ALIOTH_21.4.15_8f3a6c70dc_11.0.zip
-  ROM_Version: miui21.4.15
+  ROM_URL: https://hugeota.d.miui.com/V12.5.19.0.RKHCNXM/miui_ALIOTH_V12.5.19.0.RKHCNXM_bdf07af7bf_11.0.zip
+  ROM_Version: miui_ALIOTH_V12.5.19.0
   TZ: Asia/Shanghai
 
 jobs:
@@ -39,7 +39,7 @@ jobs:
       run: |
        cd ~
        git clone https://github.com/vm03/payload_dumper.git
-       git clone https://github.com/yyzq2/RedmiK40FastbootFlashTool.git
+       git clone https://github.com/yyzq3/RedmiK40_StockRom_To_FastbootRom.git
   
     - name: 下载ROM
       run: |
